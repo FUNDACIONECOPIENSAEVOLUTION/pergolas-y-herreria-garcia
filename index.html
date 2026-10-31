@@ -11,14 +11,14 @@
   <meta property="og:locale" content="es_MX">
   <meta property="og:title" content="García | Pérgolas y Herrería">
   <meta property="og:description" content="Pérgolas, cubiertas y herrería a medida en Ciudad de México. Conoce nuestro portafolio real y solicita una cotización.">
-  <meta property="og:image" content="https://fundacionecopiensaevolution.github.io/pergolas-y-herreria-garcia/assets/garcia-cover.svg">
+  <meta property="og:image" content="https://fundacionecopiensaevolution.github.io/pergolas-y-herreria-garcia/assets/catalogo/pergola-concepto.jpg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "Pérgolas y Herrería García",
     "url": "https://fundacionecopiensaevolution.github.io/pergolas-y-herreria-garcia/",
-    "image": "https://fundacionecopiensaevolution.github.io/pergolas-y-herreria-garcia/assets/garcia-cover.svg",
+    "image": "https://fundacionecopiensaevolution.github.io/pergolas-y-herreria-garcia/assets/catalogo/pergola-concepto.jpg",
     "description": "Pérgolas metálicas, cubiertas, techumbres y herrería a medida en Ciudad de México.",
     "address": {
       "@type": "PostalAddress",
@@ -247,6 +247,25 @@
       .footer__links{gap:13px 20px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+    /* Catálogo visual y servicios: 7 familias */
+    .services{grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+    .service--catalog{min-height:0;padding:0;display:flex;flex-direction:column;align-items:stretch;overflow:hidden;background:#fff;border-radius:13px}
+    .service--catalog .service__photo{position:relative;display:block;width:100%;height:225px;overflow:hidden;background:#d0d2ce}
+    .service--catalog .service__photo img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+    .service--catalog:hover .service__photo img{transform:scale(1.045)}
+    .service--catalog .service__photo span{position:absolute;left:13px;bottom:13px;background:rgba(20,25,27,.90);color:#f1e8dc;letter-spacing:.1em;font-weight:800;font-size:9px;padding:8px 10px;border-radius:2px}
+    .service--catalog .service__body{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:25px 26px 23px}
+    .service--catalog h3{font-size:21px;margin:12px 0 10px}
+    .service--catalog p{color:#68716c;line-height:1.7;font-size:13px}
+    .service--catalog .service__actions{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;width:100%;border-top:1px solid #e9e5df;margin-top:auto;padding-top:16px}
+    .service--catalog .service__actions a{font-weight:800;font-size:12px;padding:0;margin:0;color:#2f3835}
+    .service--catalog .service__actions a:hover{color:#ad7740}
+    .service__disclaimer{font-size:12px;color:#626e67;line-height:1.7;padding:18px 0 9px;max-width:850px}
+    .service__catalog-link{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-top:16px}
+    .service__catalog-link>span{font-size:12px;color:#777f7a}
+    @media(max-width:1000px){.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:680px){.services{grid-template-columns:1fr}.service--catalog .service__photo{height:255px}.hero__photo-label span:last-child{display:block;font-size:10px;white-space:normal;text-align:right;max-width:100px}}
   </style>
 </head>
 <body>
@@ -259,7 +278,7 @@
       </a>
       <button class="menu" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Abrir menú">☰</button>
       <nav class="nav__links" id="navlinks" aria-label="Navegación principal">
-        <a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#nosotros">Nuestra esencia</a><a href="#proceso">Cómo trabajamos</a><a class="button button--dark nav__cta" href="#cotizar">Cotizar proyecto <span aria-hidden="true">↗</span></a>
+        <a href="#servicios">Servicios</a><a href="./catalogo.html">Catálogo</a><a href="#proyectos">Obras reales</a><a href="#nosotros">Nuestra esencia</a><a href="#proceso">Cómo trabajamos</a><a class="button button--dark nav__cta" href="#cotizar">Cotizar proyecto <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
@@ -269,53 +288,53 @@
         <div class="hero__content">
           <div class="eyebrow">Ciudad de México · Pérgolas · Herrería</div>
           <h1 class="hero__title" id="hero-title">El metal toma <em>forma.</em> Tu espacio cobra vida.</h1>
-          <p class="hero__desc">Desde Ciudad de México, transformamos ideas en estructuras funcionales y con carácter. Pérgolas, cubiertas y soluciones de herrería hechas a la medida de cada espacio.</p>
+          <p class="hero__desc">Desde Ciudad de México, diseñamos posibilidades en acero para terrazas, patios y accesos. Conoce nuestras obras reales, explora el catálogo y solicita una propuesta a medida.</p>
           <div class="hero__buttons">
             <a class="button button--gold" href="#cotizar">Hablemos de tu proyecto <span aria-hidden="true">↗</span></a>
-            <a class="button button--line" href="#proyectos">Ver trabajos realizados <span aria-hidden="true">↘</span></a>
+            <a class="button button--line" href="./catalogo.html">Ver catálogo visual <span aria-hidden="true">↘</span></a>
           </div>
           <div class="hero__trust"><span class="square" aria-hidden="true">✦</span><span>Con base en Ciudad de México.<br>Diseño y acabados pensados para tu proyecto.</span></div>
         </div>
         <div class="hero__photo">
-          <img src="./WhatsApp%20Image%202026-10-29%20atyjr%201.19.05%20PM.jpeg" alt="Fotografía real de pérgola y cubierta metálica en una terraza" fetchpriority="high" decoding="async">
-          <div class="hero__photo-label"><span><small>Portafolio real</small><b>Espacios que hablan por nuestro trabajo.</b></span><span>Proyecto destacado / 01</span></div>
+          <img src="assets/catalogo/pergola-concepto.jpg" alt="Visualización conceptual hiperrealista de una pérgola de acero en terraza moderna; no representa una obra ejecutada" fetchpriority="high" decoding="async">
+          <div class="hero__photo-label"><span><small>Visualización arquitectónica</small><b>Imagina las posibilidades de tu espacio.</b></span><span>Imagen conceptual · IA</span></div>
         </div>
       </div>
     </section>
     <div class="microbar" aria-label="Características de nuestro enfoque"><div class="wrap microbar__inner"><div><strong>01</strong> Soluciones a medida</div><div><strong>02</strong> Enfoque en los detalles</div><div><strong>03</strong> Portafolio de obras reales</div></div></div>
     <section class="section" id="servicios" aria-labelledby="services-title">
-      <div class="wrap">
-        <div class="section__intro">
-          <span class="eyebrow">Lo que hacemos</span>
-          <h2 id="services-title">Diseñado para tu espacio.<br>Construido con oficio.</h2>
-          <p class="muted">Desde una terraza para compartir hasta una estructura para proteger y renovar tu ambiente. Cada propuesta se adapta a las necesidades del proyecto.</p>
-        </div>
-        <div class="services">
-          <article class="service">
-            <span class="service__number">SERVICIO / 01</span>
-            <div class="service__symbol" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17h50M13 17v36M51 17v36M7 23h50M17 17l7-8M31 17l7-8M45 17l7-8"/></svg></div>
-            <h3>Pérgolas metálicas</h3><p>Espacios exteriores con personalidad: estructuras abiertas o con cubierta, de acuerdo con el diseño y uso previsto.</p>
-            <a href="#cotizar">Consultar este servicio <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="service">
-            <span class="service__number">SERVICIO / 02</span>
-            <div class="service__symbol" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 28 33 10l25 18M11 28h47M16 28v26M52 28v26M12 54h44M20 24h34M27 20h29"/></svg></div>
-            <h3>Cubiertas y techos</h3><p>Soluciones para patios, terrazas y zonas sociales, con estructura metálica y opciones de revestimiento.</p>
-            <a href="#cotizar">Consultar este servicio <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="service">
-            <span class="service__number">SERVICIO / 03</span>
-            <div class="service__symbol" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 52V14h40v38M20 14v38M44 14v38M12 28h40M12 52h40M30 21h4M30 36h4"/></svg></div>
-            <h3>Herrería a medida</h3><p>Fabricación e integración de elementos metálicos para proyectos residenciales y comerciales, según requerimientos.</p>
-            <a href="#cotizar">Consultar este servicio <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="section projects-section" id="proyectos" aria-labelledby="projects-title">
+<div class="wrap">
+<div class="section__intro"><span class="eyebrow">Servicios para explorar · Ciudad de México</span>
+<h2 id="services-title">Una idea. Muchas formas de hacerla en metal.</h2>
+<p class="muted">Explora nuestras líneas de pérgolas, cubiertas y herrería a medida. Cada servicio se confirma con el taller según necesidades, materiales, medidas y viabilidad.</p></div>
+<div class="services"><article class="service service--catalog">
+<a class="service__photo" href="./catalogo.html#pergolas" aria-label="Ver catálogo de pérgolas y terrazas"><img src="assets/catalogo/pergola-concepto.jpg" alt="Visualización digital ilustrativa: pérgolas y terrazas" loading="lazy" decoding="async"><span>IMAGEN CONCEPTUAL</span></a>
+<div class="service__body"><span class="service__number">SERVICIO / 01</span><h3>Pérgolas y terrazas</h3><p>Estructuras para terrazas, patios y jardines, abiertas o con cubierta.</p><div class="service__actions"><a href="./catalogo.html#pergolas">Ver detalles ↗</a><a href="#cotizar" data-quote-type="Pérgola metálica">Cotizar ↗</a></div></div></article>
+<article class="service service--catalog">
+<a class="service__photo" href="./catalogo.html#cubiertas" aria-label="Ver catálogo de techumbres y cubiertas"><img src="assets/catalogo/techumbre-concepto.jpg" alt="Visualización digital ilustrativa: techumbres y cubiertas" loading="lazy" decoding="async"><span>IMAGEN CONCEPTUAL</span></a>
+<div class="service__body"><span class="service__number">SERVICIO / 02</span><h3>Techumbres y cubiertas</h3><p>Protección para patios, entradas y cocheras, con soluciones a medida.</p><div class="service__actions"><a href="./catalogo.html#cubiertas">Ver detalles ↗</a><a href="#cotizar" data-quote-type="Cubierta / techo">Cotizar ↗</a></div></div></article>
+<article class="service service--catalog">
+<a class="service__photo" href="./catalogo.html#portones" aria-label="Ver catálogo de portones y accesos"><img src="assets/catalogo/porton-concepto.jpg" alt="Visualización digital ilustrativa: portones y accesos" loading="lazy" decoding="async"><span>IMAGEN CONCEPTUAL</span></a>
+<div class="service__body"><span class="service__number">SERVICIO / 03</span><h3>Portones y accesos</h3><p>Puertas, portones y cerramientos de acero según la idea del proyecto.</p><div class="service__actions"><a href="./catalogo.html#portones">Ver detalles ↗</a><a href="#cotizar" data-quote-type="Portones y accesos">Cotizar ↗</a></div></div></article>
+<article class="service service--catalog">
+<a class="service__photo" href="./catalogo.html#barandales" aria-label="Ver catálogo de barandales y pasamanos"><img src="assets/catalogo/barandales-concepto.jpg" alt="Visualización digital ilustrativa: barandales y pasamanos" loading="lazy" decoding="async"><span>IMAGEN CONCEPTUAL</span></a>
+<div class="service__body"><span class="service__number">SERVICIO / 04</span><h3>Barandales y pasamanos</h3><p>Alternativas para balcones, terrazas, escaleras y circulaciones.</p><div class="service__actions"><a href="./catalogo.html#barandales">Ver detalles ↗</a><a href="#cotizar" data-quote-type="Barandales y pasamanos">Cotizar ↗</a></div></div></article>
+<article class="service service--catalog">
+<a class="service__photo" href="./catalogo.html#escaleras" aria-label="Ver catálogo de escaleras metálicas"><img src="assets/catalogo/escalera-concepto.jpg" alt="Visualización digital ilustrativa: escaleras metálicas" loading="lazy" decoding="async"><span>IMAGEN CONCEPTUAL</span></a>
+<div class="service__body"><span class="service__number">SERVICIO / 05</span><h3>Escaleras metálicas</h3><p>Combinaciones de metal y otros acabados sujetos a revisión técnica.</p><div class="service__actions"><a href="./catalogo.html#escaleras">Ver detalles ↗</a><a href="#cotizar" data-quote-type="Escaleras metálicas">Cotizar ↗</a></div></div></article>
+<article class="service service--catalog">
+<a class="service__photo" href="./catalogo.html#decorativa" aria-label="Ver catálogo de rejas y celosías"><img src="assets/catalogo/celosia-concepto.jpg" alt="Visualización digital ilustrativa: rejas y celosías" loading="lazy" decoding="async"><span>IMAGEN CONCEPTUAL</span></a>
+<div class="service__body"><span class="service__number">SERVICIO / 06</span><h3>Rejas y celosías</h3><p>Protecciones y elementos ornamentales para fachadas y espacios.</p><div class="service__actions"><a href="./catalogo.html#decorativa">Ver detalles ↗</a><a href="#cotizar" data-quote-type="Herrería decorativa">Cotizar ↗</a></div></div></article>
+<article class="service service--catalog">
+<a class="service__photo" href="./catalogo.html#especiales" aria-label="Ver catálogo de estructuras especiales"><img src="assets/catalogo/taller-concepto.jpg" alt="Visualización digital ilustrativa: estructuras especiales" loading="lazy" decoding="async"><span>IMAGEN CONCEPTUAL</span></a>
+<div class="service__body"><span class="service__number">SERVICIO / 07</span><h3>Estructuras especiales</h3><p>Soportes y soluciones especiales de herrería para consultar con el taller.</p><div class="service__actions"><a href="./catalogo.html#especiales">Ver detalles ↗</a><a href="#cotizar" data-quote-type="Proyecto especial">Cotizar ↗</a></div></div></article></div>
+<p class="service__disclaimer">Las imágenes de esta sección son <strong>visualizaciones digitales ilustrativas</strong>, no fotografías de trabajos realizados. En la galería de abajo encontrarás las nueve fotos auténticas aportadas por el taller.</p>
+<div class="service__catalog-link"><a class="button button--dark" href="./catalogo.html">Explorar catálogo visual completo <span aria-hidden="true">↗</span></a><span>7 categorías · Opciones de diseño · Vista imprimible</span></div>
+</div></section>
+<section class="section projects-section" id="proyectos" aria-labelledby="projects-title">
       <div class="wrap">
         <div class="projects__top">
-          <div class="section__intro"><span class="eyebrow">Obras realizadas</span><h2 id="projects-title">Nuestro trabajo,<br>sin filtros de catálogo.</h2><p class="muted">Fotografías originales de proyectos realizados. Selecciona una imagen para verla a mayor tamaño.</p></div>
+          <div class="section__intro"><span class="eyebrow">Obras realizadas · Fotografías originales</span><h2 id="projects-title">Nuestro trabajo,<br>sin filtros de catálogo.</h2><p class="muted">Estas nueve fotografías muestran trabajos auténticos aportados por el taller, separadas de las referencias visuales del catálogo. Selecciona una imagen para ampliarla.</p></div>
           <div class="filters" role="group" aria-label="Filtrar fotografías"><button type="button" class="filter" data-filter="todos" aria-pressed="true">Todos (9)</button><button type="button" class="filter" data-filter="pergolas" aria-pressed="false">Pérgolas</button><button type="button" class="filter" data-filter="cubiertas" aria-pressed="false">Cubiertas</button><button type="button" class="filter" data-filter="en-obra" aria-pressed="false">En obra</button></div>
         </div>
         <div class="projects" id="gallery">
@@ -367,7 +386,7 @@
           <form id="quote-form">
             <div class="fields">
               <div class="field"><label for="q-name">Tu nombre *</label><input id="q-name" name="nombre" autocomplete="name" placeholder="¿Cómo te llamas?" required maxlength="100"></div>
-              <div class="field"><label for="q-type">Tipo de proyecto *</label><select id="q-type" name="tipo" required><option value="">Seleccionar</option><option>Pérgola metálica</option><option>Cubierta / techo</option><option>Herrería a medida</option><option>Otro / necesito asesoría</option></select></div>
+              <div class="field"><label for="q-type">Tipo de proyecto *</label><select id="q-type" name="tipo" required><option value="">Seleccionar</option><option>Pérgola metálica</option><option>Cubierta / techo</option><option>Portones y accesos</option><option>Barandales y pasamanos</option><option>Escaleras metálicas</option><option>Herrería decorativa</option><option>Proyecto especial</option><option>Herrería a medida</option><option>Otro / necesito asesoría</option></select></div>
               <div class="field"><label for="q-city">Alcaldía, municipio o ubicación *</label><input id="q-city" name="ciudad" autocomplete="address-level2" placeholder="Ej. Coyoacán, Ciudad de México" required maxlength="120"></div>
               <div class="field"><label for="q-size">Medidas aproximadas</label><input id="q-size" name="medidas" placeholder="Ej. 5 m × 4 m" maxlength="100"></div>
               <div class="field full"><label for="q-details">Cuéntanos qué tienes en mente *</label><textarea id="q-details" name="detalles" required maxlength="1500" placeholder="Describe tu idea, el material o acabado que te interesa, el espacio y cualquier otro detalle..."></textarea></div>
@@ -386,7 +405,7 @@
     </section>
   </main>
   <footer><div class="wrap">
-    <div class="footer__top"><div class="footer__brand"><a class="brand" href="#inicio"><img src="assets/garcia-mark.svg" alt=""><span><strong>GARCÍA</strong><small>PÉRGOLAS &amp; HERRERÍA</small></span></a><p>Diseño que protege. Trabajo que permanece.<br>Herrería y pérgolas a medida en Ciudad de México (CDMX). Descubre nuestras obras y comienza a diseñar tu próximo espacio.</p></div><div class="footer__links"><a href="#servicios">Servicios</a><a href="#proyectos">Galería</a><a href="#nosotros">Nuestra esencia</a><a href="#proceso">Proceso</a><a href="#cotizar">Solicitar cotización</a><a href="#inicio">Volver arriba ↑</a></div></div>
+    <div class="footer__top"><div class="footer__brand"><a class="brand" href="#inicio"><img src="assets/garcia-mark.svg" alt=""><span><strong>GARCÍA</strong><small>PÉRGOLAS &amp; HERRERÍA</small></span></a><p>Diseño que protege. Trabajo que permanece.<br>Herrería y pérgolas a medida en Ciudad de México (CDMX). Descubre nuestras obras y comienza a diseñar tu próximo espacio.</p></div><div class="footer__links"><a href="#servicios">Servicios</a><a href="./catalogo.html">Catálogo</a><a href="#proyectos">Galería real</a><a href="#nosotros">Nuestra esencia</a><a href="#proceso">Proceso</a><a href="#cotizar">Solicitar cotización</a><a href="#inicio">Volver arriba ↑</a></div></div>
     <div class="footer__end"><span>© <span id="year"></span> Pérgolas y Herrería García. Todos los derechos reservados.</span><span>Fotografías originales del portafolio de trabajos.</span></div>
   </div></footer>
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de fotografías" aria-hidden="true">
@@ -467,6 +486,10 @@
       }
     });
     const form = $("#quote-form"), result = $("#quote-result"), out = $("#quote-message"), status = $("#quote-status");
+    const quoteType = $("#q-type");
+    const initialService = new URLSearchParams(window.location.search).get("servicio");
+    if (initialService && [...quoteType.options].some(o => o.value === initialService)) quoteType.value = initialService;
+    document.querySelectorAll("[data-quote-type]").forEach(a => a.addEventListener("click", () => { const service = a.dataset.quoteType; if ([...quoteType.options].some(o => o.value === service)) quoteType.value = service; }));
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!form.reportValidity()) return;
