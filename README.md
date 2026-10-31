@@ -1,6 +1,6 @@
 # Pérgolas y Herrería García
 
-Sitio web corporativo estático para portafolio y solicitudes de cotización.
+Sitio web corporativo estático para portafolio y solicitudes de cotización de **Pérgolas y Herrería García, con base en Ciudad de México (CDMX), México**.
 
 ## Qué contiene
 
@@ -25,7 +25,7 @@ El proyecto **no incluye un número inventado**. Al recibir el número real del 
 const WHATSAPP_NUMBER = "";
 ```
 
-y colocar el número en formato internacional sin `+` ni espacios, por ejemplo `57XXXXXXXXXX` (solo indica formato, no es un número funcional).
+y colocar el número en formato internacional sin `+` ni espacios, con el prefijo de México `52` seguido de los **10 dígitos reales** del teléfono del negocio, por ejemplo `52XXXXXXXXXX` (solo indica formato, no es un número funcional).
 
 Antes de vincularlo, el formulario permite preparar y copiar un mensaje, o compartirlo abriendo WhatsApp sin destinatario predefinido. No se almacenan datos personales y no hay servidor de formularios.
 
@@ -40,4 +40,4 @@ El álbum aparece en el arreglo `photos` usado para generar los elementos de la 
 - Dorado suave: `#e1b580`
 - Marfil: `#f7f5f0`
 
-Diseño original para Pérgolas y Herrería García. No se declara ubicación, teléfono, trayectoria, certificaciones ni garantías que no hayan sido confirmadas por el negocio.
+Diseño original para Pérgolas y Herrería García. **Ubicación confirmada: Ciudad de México (CDMX), México**. Dirección exacta, alcaldía de la sede, teléfono comercial, cobertura fuera de CDMX, trayectoria, certificaciones y garantías permanecen sin declarar hasta su confirmación.
