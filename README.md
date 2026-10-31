@@ -1,61 +1,50 @@
-# Pérgolas y Herrería García
+# García · Pérgolas y Herrería
 
-Sitio web corporativo estático para portafolio y solicitudes de cotización de **Pérgolas y Herrería García, con base en Ciudad de México (CDMX), México**.
+Página corporativa y catálogo visual del negocio **Pérgolas y Herrería García**, con base operativa en **Guadalajara, Jalisco, México** y disponibilidad de atención **en todo México**. El negocio dispone de transporte para trasladarse a las obras, sujeto a cotización de logística y calendario.
 
-## Qué contiene
+## Contacto comercial
 
-- `index.html`: página comercial responsive, portada conceptual hiperrealista, siete familias de servicios con imágenes identificadas, nueve fotografías auténticas del taller, filtros, visor ampliado y generador de cotizaciones.
-- `catalogo.html`: catálogo comercial de siete categorías, detalles y posibilidades de servicio, galería real separada y botón **Imprimir / Guardar PDF** (desde el navegador).
-- `assets/catalogo/*.jpg`: siete imágenes fotorrealistas de referencia conceptual (pérgola, techumbre, portón, barandal, escalera, celosía y taller). **No deben anunciarse como obras realizadas.**
-- `assets/portada-institucional.svg`: portada publicitaria horizontal 1200 × 630 con fotografía de referencia incrustada.
-- `assets/ficha-servicios.svg`: gráfica vertical de servicios 1080 × 1350 con fotografía de referencia incrustada.
-- `assets/garcia-mark.svg`: emblema vectorial original usado como logotipo y favicon.
-- `assets/garcia-cover.svg`: imagen institucional de portada para compartir y campañas.
-- Nueve fotografías JPEG originales aportadas al repositorio, conservadas con sus nombres actuales.
+- **WhatsApp:** +52 33 1488 4743 (número facilitado originalmente como +52 1 33 1488 4743).
+- **Enlaces directos a WhatsApp:** `https://wa.me/523314884743?text=...` (número internacional sin espacios ni el antiguo prefijo móvil 1).
+- **Correo:** [Eq739735@gmail.com](mailto:Eq739735@gmail.com).
+- **Ciudad base:** Guadalajara, Jalisco, México.
+- **Cobertura:** todo México, con medios propios para desplazarse.
+- **Pendiente:** dirección postal exacta, horario y posibles precios/condiciones de traslado.
+
+## Archivos principales
+
+- `index.html`: web principal con portada conceptual, servicios, galería de nueve fotografías reales, contacto, botones de WhatsApp y formulario.
+- `catalogo.html`: catálogo de siete familias de servicios, imágenes conceptuales identificadas, enlaces de WhatsApp por categoría, tres ejemplos de fotografías reales y opción «Imprimir / Guardar PDF».
+- `assets/catalogo/*.jpg`: siete imágenes fotorrealistas **de referencia conceptual**, NO fotografías de trabajos ejecutados.
+- `assets/portada-institucional.svg`: portada horizontal con Guadalajara, cobertura nacional y teléfono.
+- `assets/ficha-servicios.svg`: ficha vertical con servicios, ubicación, cobertura, WhatsApp y correo.
+- `assets/garcia-mark.svg`, `assets/garcia-cover.svg`: emblema y gráfico vectorial original.
+- Fotografías `WhatsApp Image*.jpeg`: **nueve imágenes auténticas** subidas por el cliente, intactas y referenciadas en la galería real.
+- `sitemap.xml` y `robots.txt`: rutas para buscadores.
+
+## Seguimiento de clientes desde la página web
+
+Los botones **WhatsApp** de la página principal, el catálogo y cada servicio enlazan al número confirmado. Todos abren un mensaje prellenado que identifica el **origen desde la página web**, por ejemplo:
+
+> Hola, llegué desde la página web de Pérgolas y Herrería García. Me interesa solicitar información y una cotización para un proyecto en México.
+
+El enlace de una categoría identifica el servicio de interés. El formulario añade nombre, tipo, ubicación, medidas y detalles, siempre con la referencia al origen de la página web. El usuario debe **pulsar Enviar en WhatsApp**; la web no envía nada por sí sola ni almacena datos de contacto. No hay CRM, bandeja de mensajes ni seguimiento automático de clics. Las conversiones que se consideren recibidas serán los mensajes enviados por los visitantes.
+
+La numeración utilizada en los enlaces `wa.me` es `523314884743`, que contiene el indicativo de país +52 seguido de los 10 dígitos nacionales 33 1488 4743. No confundir con el prefijo antiguo `+52 1`.
 
 ## Activar GitHub Pages
 
-En **Settings → Pages → Build and deployment**, seleccionar **Deploy from a branch**; en **Branch**, escoger `main` y `/(root)`, y guardar.
+1. En el repositorio, entrar a **Settings → Pages**.
+2. Elegir **Deploy from a branch**, rama `main`, directorio `/(root)`.
+3. Guardar y verificar el despliegue.
 
-URL prevista: https://fundacionecopiensaevolution.github.io/pergolas-y-herreria-garcia/
+Direcciones previstas una vez que GitHub Pages esté activo:
 
-La publicación depende de la configuración del repositorio y puede requerir habilitar GitHub Pages manualmente.
-
-**Direcciones tras activar Pages:**
-- Portada: https://fundacionecopiensaevolution.github.io/pergolas-y-herreria-garcia/
+- Inicio: https://fundacionecopiensaevolution.github.io/pergolas-y-herreria-garcia/
 - Catálogo: https://fundacionecopiensaevolution.github.io/pergolas-y-herreria-garcia/catalogo.html
 
-Para revisar cambios, probar la galería, los siete enlaces de servicio y las imágenes en móvil y escritorio.
+## Mantenimiento y transparencia
 
-## Habilitar WhatsApp comercial
+No inventar garantías, certificaciones, cantidades de clientes, años de experiencia o dirección exacta. Los servicios del catálogo son **posibilidades por consultar**, no compromisos sin evaluación técnica. Las imágenes digitales hiperrealistas se identifican como conceptuales y no deben mostrarse como obras ya ejecutadas. Para incluir fotografías de nuevos trabajos, subir los archivos al repositorio y vincularlos a la galería de obras reales.
 
-El proyecto **no incluye un número inventado**. Al recibir el número real del taller, abrir `index.html`, ubicar:
-
-```js
-const WHATSAPP_NUMBER = "";
-```
-
-y colocar el número en formato internacional sin `+` ni espacios, con el prefijo de México `52` seguido de los **10 dígitos reales** del teléfono del negocio, por ejemplo `52XXXXXXXXXX` (solo indica formato, no es un número funcional).
-
-Antes de vincularlo, el formulario permite preparar y copiar un mensaje, o compartirlo abriendo WhatsApp sin destinatario predefinido. No se almacenan datos personales y no hay servidor de formularios.
-
-## Actualizar fotos y textos
-
-El álbum aparece en el arreglo `photos` usado para generar los elementos de la página. Las nueve fotos actuales se referencian por rutas relativas con codificación URL para conservar nombres originales. Mantener la correspondencia entre cada foto, su descripción y su proyecto.
-
-## Guía visual
-
-- Grafito: `#171b1d`
-- Cobre: `#b9824f`
-- Dorado suave: `#e1b580`
-- Marfil: `#f7f5f0`
-
-Diseño original para Pérgolas y Herrería García. **Ubicación confirmada: Ciudad de México (CDMX), México**. Dirección exacta, alcaldía de la sede, teléfono comercial, cobertura fuera de CDMX, trayectoria, certificaciones y garantías permanecen sin declarar hasta su confirmación.
-
-## Política de imágenes y alcance del catálogo
-
-Las nueve fotografías subidas originalmente por el cliente se mantienen en **Obras reales**. Las siete fotografías fotorrealistas adicionales y las dos portadas son **propuestas visuales generadas**. Están etiquetadas como ilustrativas y nunca se presentan como proyectos ejecutados.
-
-Las siete familias de servicios son líneas que se pueden **consultar al taller**; disponibilidad, medidas, presupuestos, espesores, cálculo estructural, fijaciones, garantías, tiempos de entrega y cobertura de instalación se determinan con el negocio para cada caso. No se promete cobertura en toda el área metropolitana sin confirmar.
-
-Datos pendientes para convertir la web en canal directo de clientes: número real de WhatsApp mexicano, dirección o alcaldía del taller, horarios, correo comercial si existe y zona efectiva de atención. No se publica ningún teléfono de ejemplo.
+La atención en todo México significa disponibilidad para revisar proyectos a nivel nacional; los costos de desplazamiento, plazos, permisos y factibilidad de ejecución se confirman caso por caso.
