@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Portada institucional de Pérgolas y Herrería García, Ciudad de México">
+<defs><linearGradient id="shade" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0f1316" stop-opacity=".98"/><stop offset=".55" stop-color="#0f1316" stop-opacity=".83"/><stop offset="1" stop-color="#0f1316" stop-opacity=".13"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efcf9c"/><stop offset=".6" stop-color="#bc8754"/><stop offset="1" stop-color="#92623a"/></linearGradient></defs>
+<rect width="1200" height="630" fill="#111719"/><image href="catalogo/pergola-concepto.jpg" x="0" y="0" width="1200" height="630" preserveAspectRatio="xMidYMid slice"/><rect width="1200" height="630" fill="url(#shade)"/>
+<path d="M65 92H150M65 92V152" fill="none" stroke="url(#gold)" stroke-width="5"/><path d="M65 536V563H1141" fill="none" stroke="#dbab73" stroke-opacity=".6" stroke-width="2"/>
+<text x="65" y="84" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="22" fill="#edcb9d" letter-spacing="5">CIUDAD DE MÉXICO · CDMX</text>
+<text x="65" y="226" font-family="Arial,Helvetica,sans-serif" font-size="100" font-weight="900" letter-spacing="-5" fill="#fff9ed">GARCÍA</text>
+<text x="69" y="279" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" letter-spacing="7" fill="#eac394">PÉRGOLAS &amp; HERRERÍA</text>
+<rect x="65" y="316" width="425" height="3" fill="url(#gold)"/>
+<text x="67" y="385" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="700" fill="#ffffff">Diseño a medida.</text>
+<text x="67" y="436" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="700" fill="#ffffff">Metal con carácter.</text>
+<text x="69" y="515" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#e7d6c1" letter-spacing="2">PÉRGOLAS · CUBIERTAS · HERRERÍA</text>
+<text x="1136" y="588" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#fff1df" opacity=".9">VISUALIZACIÓN CONCEPTUAL</text>
+</svg>
