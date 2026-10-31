@@ -11,6 +11,12 @@ Página corporativa y catálogo visual del negocio **Pérgolas y Herrería Garc�
 - **Cobertura:** todo México, con medios propios para desplazarse.
 - **Pendiente:** dirección postal exacta, horario y posibles precios/condiciones de traslado.
 
+## Diseño visual · Versión 2.2 (31/10/2026)
+
+Rediseño de estilo arquitectónico industrial premium basado en la referencia visual escogida por el usuario. La web se mantiene como HTML funcional y adaptable, no como captura estática. Incluye navegación grafito y dorado, portada panorámica con imagen conceptual de pérgola, llamadas de acción a WhatsApp, banda con siete servicios e iconografía vectorial coherente, tarjetas fotográficas, galería real separada, pieza editorial de taller y formulario de cotización.
+
+El catálogo mantiene la misma identidad visual con imágenes conceptuales diferenciadas de obras reales. Todas las referencias de fotografías y los enlaces de contacto se gestionan desde el repositorio. Las pruebas internas verifican presencia de los archivos y enlaces relativos; **la disponibilidad pública de GitHub Pages no se ha confirmado desde el navegador externo**.
+
 ## Archivos principales
 
 - `index.html`: web principal con portada conceptual, servicios, galería de nueve fotografías reales, contacto, botones de WhatsApp y formulario.
