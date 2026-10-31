@@ -433,54 +433,203 @@ body{background:var(--paper)}
 }
 @media(max-width:760px){.nav__links{top:70px}.nav__links .button{margin-top:14px}}
 .microbar__icon{display:flex;align-items:center;justify-content:center;width:38px;height:43px;flex:none}.microbar__icon svg{width:34px;height:34px;display:block}
-    </style>
+  
+/* GARCÍA v3.0 | Fidelity layout from selected visual reference */
+:root{--garcia-gold:#cf9b5d;--garcia-bright:#ecc28c;--garcia-dark:#121415}
+body{background:#f9f8f6}
+body .wrap{width:min(1420px,calc(100% - 54px))}
+.nav.site-header{position:absolute;top:0;left:0;right:0;z-index:40;background:#080b0ddc;backdrop-filter:blur(9px);border-bottom:1px solid #ffffff38;box-shadow:none}
+.site-header .nav__inner{min-height:87px;display:flex;gap:28px;align-items:center}
+.site-header .brand{min-width:258px;gap:8px;flex:none}
+.site-header .brand img{height:69px;width:70px;border:0;border-radius:0;filter:drop-shadow(0 2px 3px #0005)}
+.site-header .brand strong{font-family:Manrope,Arial,sans-serif;font-size:38px;font-weight:800;letter-spacing:-.055em;line-height:1.05}
+.site-header .brand small{font-size:10px;letter-spacing:.14em;color:#f2e9dc;margin-top:5px}
+.site-header .nav__links{flex:1;justify-content:center;gap:clamp(9px,1.45vw,27px);font-size:12px}
+.site-header .nav__links a:not(.button){font-size:12px;color:#f7f5ef;padding:14px 2px 11px;white-space:nowrap}
+.site-header .nav__links a.nav-active{border-bottom:4px solid #d8a568}
+.site-header .nav__links a:hover{color:#f2c184}
+.nav-location{display:flex;align-items:center;gap:9px;padding-left:17px;border-left:1px solid #ffffff4a;flex:none}
+.nav-location__icon{font-size:37px;line-height:1;color:#ebb671}
+.nav-location strong,.nav-location small{display:block;color:#fff;white-space:nowrap}
+.nav-location strong{font-size:12px}.nav-location small{margin-top:4px;font-size:11px;color:#e8e2d6}
+.nav.site-header .menu{color:#f3c288;border-color:#f3c28877}
+.hero.hero--reference{height:clamp(470px,35vw,590px);position:relative;background:#101214;overflow:hidden;isolation:isolate}
+.hero--reference .hero__photo{position:absolute;top:0;bottom:0;right:0;left:33%;z-index:-2;min-height:0;overflow:hidden}
+.hero--reference .hero__photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 48%;filter:contrast(1.07) saturate(1.16)}
+.hero--reference .hero__photo:after{display:none}
+.hero--reference:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#090c0efa 0%,#101315f2 24%,#11171acb 38%,#15181854 51%,transparent 72%)}
+.hero--reference .hero__content{position:relative;padding:clamp(145px,11vw,175px) 0 54px;min-height:0;height:auto;background:none;isolation:auto;display:block;z-index:2;margin:0 auto}
+.hero--reference .hero__content:before,.hero--reference .hero__content:after{display:none}
+.hero--reference .eyebrow{font-size:13px;letter-spacing:.23em;font-weight:600;color:#f1f0eb;display:block}
+.hero--reference .eyebrow:before{display:none}
+.hero--reference .eyebrow span{color:#d8a568;margin:0 4px}
+.hero--reference .hero__title{font-family:Manrope,Arial,sans-serif;font-size:clamp(39px,3.8vw,62px);font-weight:800;letter-spacing:-.055em;line-height:1.08;text-transform:none;color:#fff;margin:28px 0 19px;max-width:620px;text-shadow:0 2px 14px #0005}
+.hero--reference .hero__desc{max-width:460px;font-size:16px;line-height:1.54;border-left:3px solid #d8a568;padding-left:16px;color:#f0eeea;margin-bottom:0}
+.hero--reference .hero__desc strong{color:#fff}
+.hero--reference .hero__buttons{display:flex;align-items:center;gap:13px;margin-top:28px;flex-wrap:wrap}
+.hero--reference .hero__buttons .button{border-radius:7px;min-height:54px;padding:12px 20px;font-size:14px;font-weight:800;white-space:nowrap;box-shadow:0 6px 18px #0005}
+.hero--reference .hero__buttons .button--gold{background:linear-gradient(160deg,#e5bd87,#ae7639);color:#fff;border-color:#deaf69}
+.hero--reference .hero__buttons .button--line{border:1px solid #f7f2e7;background:#15181aa6;color:#fff}
+.button-icon{display:inline-flex;align-items:center;justify-content:center;font-size:22px;font-weight:400;line-height:1}
+.hero-disclosure{position:absolute;right:16px;bottom:10px;background:#121717aa;color:#fff9eb;font-size:9px;letter-spacing:.06em;padding:5px 7px;border-radius:3px;z-index:2}
+.microbar{background:linear-gradient(95deg,#211f1e,#282625,#1b1c1c);border-top:1px solid #dbb07766;border-bottom:1px solid #d0b38d55;box-shadow:inset 0 7px 18px #0003}
+.microbar__inner{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));align-items:stretch;overflow:visible;gap:0}
+.microbar__inner a{min-height:90px;display:flex;align-items:center;justify-content:center;gap:11px;padding:17px 11px;flex:auto;border-right:1px solid #ffffff39;color:#e6bb7c}
+.microbar__inner a:last-child{border-right:0}
+.microbar__inner a:hover{background:#ffffff14}
+.microbar__inner a svg{display:block;min-width:36px;width:38px;height:38px;color:#e4bc84}
+.microbar__inner a span{display:block;color:#fff}
+.microbar__inner a span b{display:block;font-size:12px;white-space:nowrap}
+.microbar__inner a span small{display:block;font-size:10px;font-weight:400;color:#f2ebe2;white-space:normal;line-height:1.35;margin-top:3px}
+.featured-projects{background:#f7f6f4;padding:29px 0 32px;color:#1c1d1d}
+.featured-grid{display:grid;grid-template-columns:minmax(0,2.72fr) minmax(310px,.98fr);gap:25px;align-items:stretch}
+.featured-main{min-width:0}
+.featured-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:24px}
+.section-kicker{font-size:12px;color:#232425;font-weight:700;letter-spacing:.27em;display:flex;align-items:center;gap:11px}
+.section-kicker:before{content:"";width:32px;height:4px;background:#c79455;display:block}
+.featured-head h2{font-size:clamp(23px,2.35vw,34px);font-weight:800;line-height:1.17;letter-spacing:-.04em;margin:10px 0 0;color:#1c2021}
+.featured-more{font-size:12px;font-weight:800;text-decoration:underline;text-underline-offset:5px;white-space:nowrap;color:#171a19;display:flex;align-items:center;gap:7px;margin-bottom:3px}
+.featured-more span{font-size:22px;text-decoration:none}
+.featured-thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.featured-thumb{display:block;overflow:hidden;height:clamp(138px,15vw,216px);border-radius:10px;background:#34393c;box-shadow:0 2px 10px #0002}
+.featured-thumb img{height:100%;width:100%;object-fit:cover;transition:transform .3s}
+.featured-thumb:hover img{transform:scale(1.065)}
+.featured-benefits{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:18px}
+.featured-benefits>div{display:flex;gap:9px;align-items:center;justify-content:center;min-height:49px;padding:0 9px;border-right:1px solid #9b9b9b}
+.featured-benefits>div:last-child{border-right:none}
+.featured-benefits svg{color:#996020;flex:none;width:33px;height:33px}
+.featured-benefits span{display:block;font-size:10px;line-height:1.35}
+.featured-benefits strong,.featured-benefits small{display:block;color:#23221f}
+.featured-benefits strong{font-weight:800}
+.project-cta{position:relative;min-height:340px;overflow:hidden;border-radius:12px;background:#111719;color:#fff;display:flex;align-items:center}
+.project-cta>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:76% center;filter:brightness(.7) saturate(1.15)}
+.project-cta:before{content:"";z-index:1;position:absolute;inset:0;background:linear-gradient(90deg,#101517f9 0%,#131819eb 44%,#11171a44 79%,#11171922)}
+.project-cta__content{z-index:2;position:relative;padding:26px 23px;max-width:100%;width:100%}
+.project-cta h2{font-size:clamp(22px,2vw,31px);line-height:1.1;letter-spacing:-.03em;color:#fff;margin-bottom:17px}
+.project-cta p{font-size:14px;line-height:1.5;max-width:230px;color:#f4f0e9;margin-bottom:21px}
+.project-cta .button{width:100%;max-width:290px;margin-top:10px;min-height:48px;border-radius:6px;padding:9px 11px;font-size:12px;justify-content:space-between}
+.project-cta .button--gold{background:linear-gradient(120deg,#deb075,#a87537);color:#fff}
+.project-cta .button--line{background:#111517be;border:1px solid #fff;color:#fff}
+.project-cta__disclosure{z-index:3;position:absolute;right:10px;bottom:8px;font-size:8px;color:#fff9df;background:#0008;padding:2px 4px;border-radius:3px}
+#servicios{padding-top:72px}
+#servicios .section__intro{margin-bottom:30px}
+#galeria-real{padding-top:72px;padding-bottom:72px}
+#galeria-real .projects__top{margin-bottom:23px}
+.site-header .nav__links a:not(.button):hover{color:#edc086}
+@media(max-width:1250px){
+ .site-header .nav__inner{gap:14px}.site-header .brand{min-width:225px}.site-header .brand strong{font-size:30px}.site-header .brand img{width:60px;height:60px}
+ .nav-location strong{font-size:11px}.nav-location small{font-size:10px}
+ .site-header .nav__links{gap:11px}
+ .site-header .nav__links a:not(.button){font-size:11px}
+ .featured-grid{grid-template-columns:minmax(0,2.3fr) minmax(290px,.9fr)}
+ .featured-benefits>div{padding:0 4px;gap:5px}
+ .featured-benefits svg{height:29px;width:29px}
+}
+@media(max-width:1070px){
+ .site-header .menu{display:block;margin-left:auto}
+ .site-header .nav__links{display:none;position:absolute;left:0;right:0;top:76px;background:#13191bef;backdrop-filter:blur(17px);padding:12px 22px 20px;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid #deb77d}
+ .site-header .nav__links.is-open{display:flex}
+ .site-header .nav__links a:not(.button){font-size:13px;padding:12px}
+ .site-header .nav__inner{min-height:76px}
+ .nav-location{padding-left:12px;margin-right:5px}
+ .hero--reference .hero__content{padding-top:132px}
+ .microbar__inner{display:flex;overflow-x:auto;scrollbar-width:thin;scrollbar-color:#b98a50 #232629}
+ .microbar__inner a{flex:0 0 190px}
+ .featured-grid{grid-template-columns:1fr}
+ .project-cta{min-height:280px}
+ .project-cta p{max-width:330px}
+ .featured-thumbs{grid-template-columns:repeat(5,minmax(0,1fr))}
+}
+@media(max-width:700px){
+ body .wrap{width:calc(100% - 34px)}
+ .site-header .nav__inner{min-height:69px}
+ .site-header .brand{min-width:0}.site-header .brand img{width:48px;height:52px}
+ .site-header .brand strong{font-size:23px}.site-header .brand small{font-size:8px}
+ .nav-location{display:none}
+ .site-header .nav__links{top:69px}
+ .hero.hero--reference{min-height:600px;height:auto}
+ .hero--reference .hero__photo{left:0;top:0;bottom:0}
+ .hero--reference .hero__photo>img{object-position:53% center;filter:brightness(.65) saturate(1.18)}
+ .hero--reference:before{background:linear-gradient(90deg,#090c0ef5 0%,#111617ce 50%,#0d12138e),linear-gradient(0deg,#0c1114a3,transparent 55%)}
+ .hero--reference .hero__content{padding:148px 0 65px;margin:0 auto}
+ .hero--reference .hero__title{font-size:clamp(38px,8.2vw,58px);line-height:1.08;max-width:590px}
+ .hero--reference .eyebrow{font-size:10px;letter-spacing:.15em}
+ .hero--reference .hero__desc{font-size:15px}
+ .hero--reference .hero__buttons{display:grid;grid-template-columns:1fr;max-width:300px}
+ .hero--reference .hero__buttons .button{justify-content:center;white-space:normal}
+ .hero-disclosure{font-size:8px}
+ .microbar__inner a{flex-basis:172px}
+ .featured-projects{padding-top:37px}
+ .featured-head{flex-wrap:wrap;align-items:start;gap:10px}
+ .featured-head h2{font-size:26px}
+ .featured-thumbs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px}
+ .featured-thumb{flex:0 0 44%;height:170px;scroll-snap-align:start}
+ .featured-benefits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .featured-benefits>div{justify-content:start;border:0}
+ .project-cta{min-height:340px}
+}
+
+  </style>
 </head>
 <body>
-  <div class="topline">Guadalajara, Jalisco <span>✦</span> Cobertura en todo México <span>✦</span> Diseño y fabricación a medida</div>
-  <header class="nav">
-    <div class="wrap nav__inner">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <img src="assets/garcia-mark.svg" alt="Emblema García">
-        <span><strong>GARCÍA</strong><small>PÉRGOLAS &amp; HERRERÍA</small></span>
-      </a>
-      <button class="menu" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Abrir menú">☰</button>
-      <nav class="nav__links" id="navlinks" aria-label="Navegación principal">
-        <a href="#servicios">Servicios</a><a href="./catalogo.html">Catálogo</a><a href="#proyectos">Obras reales</a><a href="#nosotros">Nuestra esencia</a><a href="#proceso">Cómo trabajamos</a><a class="button button--dark nav__cta" href="#cotizar">Cotizar proyecto <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
-  </header>
-  <main id="inicio">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__grid">
-        <div class="hero__content">
-          <div class="eyebrow">Guadalajara, Jalisco · Atención nacional</div>
-          <h1 class="hero__title" id="hero-title"><span>Pérgolas &amp;</span> <em>Herrería García</em> <small>a la medida</small></h1>
-          <p class="hero__desc">Diseño, fabricación e instalación de estructuras metálicas que transforman tus espacios. <strong>Base en Guadalajara, Jalisco · Cobertura en todo México.</strong></p>
-          <div class="hero__buttons">
-            <a class="button button--gold" href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Vi%20el%20dise%C3%B1o%20y%20el%20cat%C3%A1logo%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer">Cotiza por WhatsApp <span aria-hidden="true">↗</span></a>
-            <a class="button button--line" href="./catalogo.html">Ver catálogo visual <span aria-hidden="true">↘</span></a>
-            <a class="button button--line" href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Me%20interesa%20solicitar%20informaci%C3%B3n%20y%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer">WhatsApp · Cotizar <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="hero__trust"><span class="square" aria-hidden="true">✦</span><span>Guadalajara, Jalisco · Disponibilidad nacional.<br>Transporte para desplazamiento a obras.</span></div>
-          <div class="hero__perks" aria-label="Lo que nos caracteriza"><span><b aria-hidden="true">✓</b> Diseño personalizado</span><span><b aria-hidden="true">✓</b> Trabajo en acero</span><span><b aria-hidden="true">✓</b> Cobertura nacional</span><span><b aria-hidden="true">✓</b> Cotización por proyecto</span></div>
-        </div>
-        <div class="hero__photo">
-          <img src="assets/catalogo/pergola-concepto.jpg" alt="Visualización conceptual hiperrealista de una pérgola de acero en terraza moderna; no representa una obra ejecutada" fetchpriority="high" decoding="async">
-          <div class="hero__photo-label"><span><small>Visualización arquitectónica</small><b>Imagina las posibilidades de tu espacio.</b></span><span>Imagen conceptual · IA</span></div>
-        </div>
-      </div>
-    </section>
-    <div class="microbar" aria-label="Nuestras familias de servicios">
-<div class="wrap microbar__inner">
-  <a href="./catalogo.html#pergolas"><span class="microbar__icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="square" stroke-width="2.6"><path d="M6 21h52M12 21v32M52 21v32M15 21l8-10M28 21l8-10M41 21l8-10M9 53h46"/></svg></span><span>Pérgolas <small>Residenciales y comerciales</small></span></a>
-  <a href="./catalogo.html#cubiertas"><span class="microbar__icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="square" stroke-width="2.6"><path d="M5 29 32 11l27 18M11 29h42M15 29v23M49 29v23M10 52h44M20 25h31"/></svg></span><span>Techumbres <small>Techos y cubiertas</small></span></a>
-  <a href="./catalogo.html#portones"><span class="microbar__icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="square" stroke-width="2.6"><path d="M8 12h48v43H8zM18 12v43M28 12v43M38 12v43M48 12v43"/></svg></span><span>Portones <small>Accesos metálicos</small></span></a>
-  <a href="./catalogo.html#barandales"><span class="microbar__icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="square" stroke-width="2.6"><path d="M6 18h52M6 53h52M12 18v35M25 18v35M38 18v35M51 18v35"/></svg></span><span>Barandales <small>Pasamanos y protecciones</small></span></a>
-  <a href="./catalogo.html#escaleras"><span class="microbar__icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="square" stroke-width="2.6"><path d="M7 54h11V43h11V32h11V21h14M7 16h47M16 16v38"/></svg></span><span>Escaleras <small>Estructuras a medida</small></span></a>
-  <a href="./catalogo.html#decorativa"><span class="microbar__icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="square" stroke-width="2.6"><path d="M13 11h38v42H13zM13 11l38 42M51 11 13 53M32 11v42M13 32h38"/></svg></span><span>Herrería <small>Rejas y celosías</small></span></a>
-  <a href="#proyectos"><span class="microbar__icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="square" stroke-width="2.6"><rect x="8" y="11" width="48" height="42" rx="3"/><circle cx="44" cy="23" r="5"/><path d="M11 46 24 31l10 10 8-8 12 14"/></svg></span><span>Obras reales <small>Portafolio fotográfico</small></span></a>
-</div></div>
-    <section class="section" id="servicios" aria-labelledby="services-title">
+  <header class="nav site-header">
+<div class="wrap nav__inner">
+<a class="brand" href="#inicio" aria-label="García Pérgolas y Herrería - Inicio">
+  <img src="assets/garcia-monograma-dorado.svg" width="76" height="68" alt="Monograma G bajo pérgola, logotipo García">
+  <span><strong>GARCÍA</strong><small>PÉRGOLAS &amp; HERRERÍA</small></span>
+</a>
+<button type="button" class="menu" aria-label="Abrir menú" aria-controls="navlinks" aria-expanded="false">☰</button>
+<nav class="nav__links" id="navlinks" aria-label="Menú principal">
+  <a class="nav-active" href="#inicio">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#proyectos">Catálogo de Proyectos</a>
+  <a href="#proceso">Proceso de Trabajo</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#cotizar">Contacto</a>
+</nav>
+<div class="nav-location" aria-label="Ubicación y cobertura">
+  <span class="nav-location__icon" aria-hidden="true">⌖</span>
+  <span><strong>Guadalajara, Jalisco</strong><small>Cobertura en todo México</small></span>
+</div>
+</div>
+</header>
+<main id="inicio">
+    <section class="hero hero--reference" aria-labelledby="hero-title">
+<div class="hero__photo" aria-hidden="true">
+ <img src="assets/portada-pergola-referencia.jpg" alt="" width="906" height="432" fetchpriority="high" decoding="async">
+</div>
+<div class="wrap hero__content">
+ <div class="eyebrow">DISEÑO <span>•</span> FABRICACIÓN <span>•</span> INSTALACIÓN</div>
+ <h1 class="hero__title" id="hero-title">Pérgolas y Herrería<br>a la Medida</h1>
+ <p class="hero__desc">Estructuras metálicas funcionales, modernas y resistentes que transforman y dan valor a tus espacios. <strong>En Guadalajara, Jalisco, con cobertura en todo México.</strong></p>
+ <div class="hero__buttons">
+  <a class="button button--gold" href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Vi%20sus%20proyectos%20y%20quisiera%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer"><span class="button-icon" aria-hidden="true">✆</span> Solicita tu cotización <span aria-hidden="true">›</span></a>
+  <a class="button button--line" href="./catalogo.html"><span class="button-icon" aria-hidden="true">▣</span> Ver catálogo <span aria-hidden="true">›</span></a>
+ </div>
+</div>
+<span class="hero-disclosure">Imagen arquitectónica conceptual</span>
+</section>
+<div class="microbar" aria-label="Categorías de servicios"><div class="microbar__inner wrap"><a href="./catalogo.html#pergolas"><svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h52M10 22v31M50 22v31M4 22l28-14 28 14M24 12v10M40 12v10"/></svg><span><b>Pérgolas</b><small>Residenciales y Comerciales</small></span></a><a href="./catalogo.html#portones"><svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" aria-hidden="true"><path d="M8 15h48v38H8zM15 15v38M25 15v38M35 15v38M45 15v38M10 52h44"/></svg><span><b>Portones</b><small>y Accesos</small></span></a><a href="./catalogo.html#barandales"><svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" aria-hidden="true"><path d="M7 21 56 10M7 48 56 36M14 20v27M26 18v25M38 15v25M50 12v25"/></svg><span><b>Barandales</b><small>y Pasamanos</small></span></a><a href="./catalogo.html#cubiertas"><svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" aria-hidden="true"><path d="M3 27 31 10l29 17M9 27h46M10 27v25M54 27v25M10 52h44M20 22l11-8 12 8"/></svg><span><b>Techumbres</b><small>y Cubiertas</small></span></a><a href="./catalogo.html#decorativa"><svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="10" width="44" height="45"/><path d="M10 20h44M10 38h44M26 10v45M38 10v45"/></svg><span><b>Protecciones</b><small>y Rejas</small></span></a><a href="./catalogo.html#decorativa"><svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" aria-hidden="true"><path d="M14 54V20h36v34M14 20 32 8 50 20M14 34h36M21 22v31M32 20v33M43 22v31"/></svg><span><b>Herrería</b><small>Decorativa</small></span></a><a href="./catalogo.html#especiales"><svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" aria-hidden="true"><path d="M14 12 49 49M45 12 12 45M10 11l12 11M43 46l8 8M46 9l9 9M8 44l10 11"/><circle cx="14" cy="14" r="5"/><circle cx="50" cy="49" r="5"/></svg><span><b>Proyectos</b><small>Especiales</small></span></a></div></div>
+<section class="featured-projects" id="proyectos" aria-labelledby="featured-title"><div class="wrap featured-grid">
+<div class="featured-main">
+ <div class="featured-head">
+  <div><span class="section-kicker">CATÁLOGO DE PROYECTOS</span><h2 id="featured-title">Conoce algunos de nuestros trabajos</h2></div>
+  <a class="featured-more" href="#galeria-real">Ver galería completa <span aria-hidden="true">›</span></a>
+ </div>
+ <div class="featured-thumbs"><a href="#galeria-real" class="featured-thumb" aria-label="Ver galería real: Pérgola en terraza"><img loading="lazy" decoding="async" src="./WhatsApp%20Image%202026-10-29%20atyjr%201.19.05%20PM.jpeg" alt="Pérgola en terraza, fotografía de trabajo del taller"></a><a href="#galeria-real" class="featured-thumb" aria-label="Ver galería real: Cubierta terminada"><img loading="lazy" decoding="async" src="./WhatsApp%20Image%202026-10-29%20aytjrt%201.19.05%20PM.jpeg" alt="Cubierta terminada, fotografía de trabajo del taller"></a><a href="#galeria-real" class="featured-thumb" aria-label="Ver galería real: Estructura a medida"><img loading="lazy" decoding="async" src="./WhatsApp%20Image%202026-10-29%20ayruyt%201.19.06%20PM.jpeg" alt="Estructura a medida, fotografía de trabajo del taller"></a><a href="#galeria-real" class="featured-thumb" aria-label="Ver galería real: Instalación metálica"><img loading="lazy" decoding="async" src="./WhatsApp%20Image%202026-10-29%20at%201.19.04%20PM.jpeg" alt="Instalación metálica, fotografía de trabajo del taller"></a><a href="#galeria-real" class="featured-thumb" aria-label="Ver galería real: Cubierta iluminada"><img loading="lazy" decoding="async" src="./WhatsApp%20Image%202026-10-29tury%20at%201.19.06%20PM.jpeg" alt="Cubierta iluminada, fotografía de trabajo del taller"></a></div>
+ <div class="featured-benefits"><div><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" width="37" height="37" aria-hidden="true"><path d="M32 5 53 14v17c0 15-10 23-21 29C21 54 11 46 11 31V14Z"/><path d="M23 31l7 7 13-14"/></svg><span><strong>Compromiso</strong><small>con el trabajo</small></span></div><div><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" width="37" height="37" aria-hidden="true"><path d="M12 52 52 12M13 12l40 40M9 10l11 11M44 44l10 10"/></svg><span><strong>Diseño</strong><small>Personalizado</small></span></div><div><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" width="37" height="37" aria-hidden="true"><path d="M14 34v-8a18 18 0 0 1 36 0v8M7 34h50v15H7Z"/><path d="M30 8v17M39 10v16"/></svg><span><strong>Fabricación</strong><small>a Medida</small></span></div><div><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" width="37" height="37" aria-hidden="true"><path d="M8 30 23 42 32 35 42 41 56 28M9 30v19h47V30M8 25h49"/></svg><span><strong>Instalación</strong><small>Coordinada</small></span></div><div><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" width="37" height="37" aria-hidden="true"><path d="M32 58s19-20 19-34A19 19 0 1 0 13 24c0 14 19 34 19 34Z"/><circle cx="32" cy="24" r="7"/></svg><span><strong>Atención</strong><small>en todo México</small></span></div></div>
+</div>
+<aside class="project-cta" aria-labelledby="project-cta-title">
+ <img src="assets/catalogo/taller-concepto.jpg" alt="Imagen conceptual de fabricación metálica con soldadura" loading="lazy" decoding="async">
+ <div class="project-cta__content"><h2 id="project-cta-title">¿Tienes un proyecto<br>en mente?</h2>
+ <p>Te asesoramos y te damos una propuesta a la medida.</p>
+ <a class="button button--gold" href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Vi%20sus%20proyectos%20y%20quisiera%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer"><span class="button-icon" aria-hidden="true">✆</span> Cotiza por WhatsApp <span aria-hidden="true">›</span></a>
+ <a class="button button--line" href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Quisiera%20programar%20una%20visita%20o%20evaluaci%C3%B3n%20para%20mi%20proyecto.%20Mi%20ciudad%20y%20estado%20son%3A" target="_blank" rel="noopener noreferrer"><span class="button-icon" aria-hidden="true">▦</span> Agenda una visita <span aria-hidden="true">›</span></a>
+ </div>
+ <span class="project-cta__disclosure">Imagen conceptual</span>
+</aside>
+</div></section>
+<section class="section" id="servicios" aria-labelledby="services-title">
 <div class="wrap">
 <div class="section__intro"><span class="eyebrow">Nuestros servicios · Catálogo de soluciones</span>
 <h2 id="services-title">Herrería con personalidad.<br>Espacios con carácter.</h2>
@@ -509,7 +658,7 @@ body{background:var(--paper)}
 <p class="service__disclaimer">Las imágenes de esta sección son <strong>visualizaciones digitales ilustrativas</strong>, no fotografías de trabajos realizados. En la galería de abajo encontrarás las nueve fotos auténticas aportadas por el taller.</p>
 <div class="service__catalog-link"><a class="button button--dark" href="./catalogo.html">Explorar catálogo visual completo <span aria-hidden="true">↗</span></a><span>7 categorías · Opciones de diseño · Vista imprimible</span></div>
 </div></section>
-<section class="section projects-section" id="proyectos" aria-labelledby="projects-title">
+<section class="section projects-section" id="galeria-real" aria-labelledby="projects-title">
       <div class="wrap">
         <div class="projects__top">
           <div class="section__intro"><span class="eyebrow">Obras realizadas · Fotografías originales</span><h2 id="projects-title">Nuestro trabajo,<br>sin filtros de catálogo.</h2><p class="muted">Estas nueve fotografías muestran trabajos auténticos aportados por el taller, separadas de las referencias visuales del catálogo. Selecciona una imagen para ampliarla.</p></div>
@@ -529,21 +678,7 @@ body{background:var(--paper)}
         <p class="projects__foot">Las fotografías pertenecen al portafolio aportado para este proyecto. Algunos espacios aparecen durante su proceso de instalación.</p>
       </div>
     </section>
-<section class="workshop-promo" aria-labelledby="workshop-title">
-<div class="wrap workshop-promo__inner">
-  <div class="workshop-promo__picture"><img src="assets/catalogo/taller-concepto.jpg" alt="Imagen conceptual de un soldador fabricando una estructura en un taller de herrería" loading="lazy" decoding="async"><small>Visualización de taller · Imagen conceptual</small></div>
-  <div class="workshop-promo__content">
-     <span class="eyebrow">Tu proyecto comienza aquí</span>
-     <h2 id="workshop-title">¿Tienes una idea en mente?<br><em>Hagámosla en metal.</em></h2>
-     <p>Desde una pérgola hasta una estructura especial: cuéntanos tu ubicación, medidas y necesidades. Atendemos solicitudes de todo México desde Guadalajara, Jalisco.</p>
-     <div class="workshop-promo__actions">
-       <a href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Vi%20el%20dise%C3%B1o%20y%20el%20cat%C3%A1logo%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n." class="button button--gold" target="_blank" rel="noopener noreferrer">Solicitar cotización por WhatsApp ↗</a>
-       <a href="#cotizar" class="button button--line">Describir mi proyecto ↗</a>
-     </div>
-     <div class="workshop-promo__facts"><span>⌖ Guadalajara, Jalisco</span><span>⛟ Cobertura nacional</span><span>✉ Eq739735@gmail.com</span></div>
-  </div>
-</div></section>
-    <section class="section feature" id="nosotros" aria-labelledby="feature-title">
+<section class="section feature" id="nosotros" aria-labelledby="feature-title">
       <div class="wrap feature__grid">
         <div class="feature__visual"><img src="./WhatsApp%20Image%202026-10-29tury%20at%201.19.06%20PM.jpeg" alt="Cubierta metálica real, iluminada durante la noche" loading="lazy" decoding="async"><div class="feature__note"><b>El detalle hace la diferencia.</b><small>Función, estética e integración con cada ambiente.</small></div></div>
         <div class="feature__content">
@@ -603,7 +738,7 @@ body{background:var(--paper)}
   </main>
   <a class="whatsapp-fab" href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Me%20interesa%20solicitar%20informaci%C3%B3n%20y%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp al taller García, mensaje desde el sitio web"><span aria-hidden="true">✆</span><span>WhatsApp · Cotiza</span></a>
   <footer><div class="wrap">
-    <div class="footer__top"><div class="footer__brand"><a class="brand" href="#inicio"><img src="assets/garcia-mark.svg" alt=""><span><strong>GARCÍA</strong><small>PÉRGOLAS &amp; HERRERÍA</small></span></a><p>Diseño que protege. Trabajo que permanece.<br>Base en Guadalajara, Jalisco, con cobertura en todo México y disponibilidad de transporte.</p><p class="footer__contact"><a href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Me%20interesa%20solicitar%20informaci%C3%B3n%20y%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer">WhatsApp: +52 33 1488 4743</a><a href="mailto:Eq739735@gmail.com">Correo: Eq739735@gmail.com</a></p></div><div class="footer__links"><a href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Me%20interesa%20solicitar%20informaci%C3%B3n%20y%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="mailto:Eq739735@gmail.com">Correo</a><a href="#servicios">Servicios</a><a href="./catalogo.html">Catálogo</a><a href="#proyectos">Galería real</a><a href="#nosotros">Nuestra esencia</a><a href="#proceso">Proceso</a><a href="#cotizar">Solicitar cotización</a><a href="#inicio">Volver arriba ↑</a></div></div>
+    <div class="footer__top"><div class="footer__brand"><a class="brand" href="#inicio"><img src="assets/garcia-mark.svg" alt=""><span><strong>GARCÍA</strong><small>PÉRGOLAS &amp; HERRERÍA</small></span></a><p>Diseño que protege. Trabajo que permanece.<br>Base en Guadalajara, Jalisco, con cobertura en todo México y disponibilidad de transporte.</p><p class="footer__contact"><a href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Me%20interesa%20solicitar%20informaci%C3%B3n%20y%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer">WhatsApp: +52 33 1488 4743</a><a href="mailto:Eq739735@gmail.com">Correo: Eq739735@gmail.com</a></p></div><div class="footer__links"><a href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Me%20interesa%20solicitar%20informaci%C3%B3n%20y%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="mailto:Eq739735@gmail.com">Correo</a><a href="#servicios">Servicios</a><a href="./catalogo.html">Catálogo</a><a href="#galeria-real">Galería real</a><a href="#nosotros">Nuestra esencia</a><a href="#proceso">Proceso</a><a href="#cotizar">Solicitar cotización</a><a href="#inicio">Volver arriba ↑</a></div></div>
     <div class="footer__end"><span>© <span id="year"></span> Pérgolas y Herrería García. Todos los derechos reservados.</span><span>Fotografías originales del portafolio · Diseño v2.2 · 31/10/2026</span></div>
   </div></footer>
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de fotografías" aria-hidden="true">
