@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fundacionecopiensaevolution.github.io/pergolas-y-herreria-garcia/sitemap.xml
