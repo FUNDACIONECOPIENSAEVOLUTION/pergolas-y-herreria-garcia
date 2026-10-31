@@ -21,12 +21,95 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offse
 .whatsapp-fab:hover{background:#087b60}.whatsapp-fab span:first-child{font-size:24px}
 @media print{.whatsapp-fab,.service-button--wa{display:none!important}}
 @media(max-width:660px){.whatsapp-fab{right:12px;bottom:12px;font-size:12px;padding:11px 14px}}
+
+/* UNIFICACIÓN VISUAL PREMIUM CON PORTADA GARCÍA */
+:root{--ink:#11171a;--gold:#edc07b;--copper:#bf8d50;--paper:#f7f4ed}
+.contactbar{background:linear-gradient(90deg,#0b0f11,#292823,#0b0f11);color:#eee2ce;border-bottom:1px solid #eec68b35;font-size:11px}
+.contactbar__inner{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:9px}
+.contactbar__inner>span{font-weight:800;letter-spacing:.07em}
+.contactbar__inner>div{display:flex;gap:21px;align-items:center}
+.contactbar__inner a:hover{color:#f3c583}
+.nav{background:#111619f8;border-bottom:1px solid #d1a66d66;box-shadow:0 16px 35px #0004}
+.brand img{width:55px;height:55px}
+.brand strong{font-size:28px}
+.brand small{color:#dca968}
+.nav__links a:not(.nav__cta){color:#e9e5df}
+.nav__links .nav__cta{background:linear-gradient(130deg,#e9c184,#c28d52);color:#171b1e}
+.intro{background:#0d1316}
+.intro:before{background:linear-gradient(90deg,#080b0c 0%,#101519f2 29%,#1015199c 52%,#10151912 100%)}
+.intro>img{filter:contrast(1.12) saturate(1.06)}
+.intro__inner{min-height:570px}
+.intro .eyebrow{color:#eac188}
+.intro h1{max-width:870px;text-transform:uppercase}
+.intro h1 em{font-style:normal;color:#efbd71;text-shadow:0 4px 30px #000b}
+.intro p{max-width:620px}
+.intro__actions .btn--gold{background:linear-gradient(135deg,#f3ce98,#bc884e);border-color:transparent;color:#10161a}
+.intro__actions .btn--ghost{border-color:#e6e6d577}
+.intro__actions .btn:hover{transform:translateY(-2px)}
+.intro__note{color:#ead6b7;background:#161d20bd;max-width:650px;padding:11px 13px;border-radius:3px;border-left:3px solid #efc182}
+.catalog{background:#1b2225;color:#f3f0ea}
+.catalog .section-head p{color:#c8cbc5}
+.catalog .eyebrow{color:#ecc083}
+.catalog__filters a{background:#293134;color:#e9d9c0;border:1px solid #cda56e83}
+.catalog__filters a:hover{background:#e5bd84;color:#161b1d}
+.catalog-grid{gap:20px}
+.service-card{background:#262f32;border:1px solid #e4bb7f43;color:#f9f2e8;box-shadow:0 14px 26px #0004;transition:transform .2s,border .2s}
+.service-card:hover{transform:translateY(-5px);border-color:#e4b975a6}
+.visual{height:252px}
+.visual-label{background:#101719ec;color:#edc993}
+.service-card__body{padding:27px}
+.kicker{color:#e9b67a}
+.service-card h3{color:#fff8ef}
+.service-card p{color:#c7d0cb}
+.service-card .divider{border-color:#ffffff2b}
+.service-card h4{color:#f0c18b}
+.service-card ul{color:#d6d3cc}
+.service-button{background:#343d40;color:#f4e4ca}
+.service-button:hover{background:#554531;color:#fff}
+.service-button--wa{background:#16694f!important;color:#fff!important}
+.service-button--wa:hover{background:#0b855c!important}
+.quote-band{background:#11181b;border-block:1px solid #d7ae6c63}
+.quote-band .eyebrow{color:#e5bd82}
+.quote-band h2{color:#fff}
+.quote-band .btn{background:linear-gradient(120deg,#efc891,#c19053);color:#121519}
+.real{background:#f4f1eb;color:#1e2527}
+.real h2{color:#1b2124}
+.real .eyebrow{color:#a87944}
+.real figure{box-shadow:0 12px 27px #0002}
+.process{background:#fffefa}
+.process .eyebrow{color:#9e6c36}
+.process__grid>div{border-color:#bd9056}
+.foot{background:#0d1215;border-top:3px solid #c99c60}
+.foot .eyebrow{color:#e8b878}
+.foot__inner a{color:#e3bc83}
+.whatsapp-fab{background:linear-gradient(135deg,#19b971,#08764d)}
+@media(max-width:950px){
+ .nav__links>a:not(.nav__cta){display:none}
+ .brand strong{font-size:22px}.brand img{width:45px;height:45px}
+ .contactbar__inner{flex-wrap:wrap;justify-content:center;text-align:center}
+ .contactbar__inner>div{flex-wrap:wrap;justify-content:center}
+}
+@media(max-width:660px){
+ .contactbar__inner{font-size:10px}.contactbar__inner>div{gap:8px 15px}
+ .intro__inner{min-height:480px}
+ .intro h1{font-size:clamp(38px,10.5vw,57px)}
+ .intro__actions .btn{width:100%}
+ .intro:before{background:linear-gradient(90deg,#080b0cfa,#080b0cc2)}
+ .catalog{padding:65px 0}.visual{height:245px}
+ .service-card__body{padding:23px}
+}
+@media print{
+ .contactbar{display:none!important}.intro{background:#fff;color:#111}.intro:before{display:none}
+ .catalog{background:white;color:#111}.catalog .section-head p{color:#444}.service-card{background:#fff!important;color:#111;box-shadow:none;border:1px solid #b2a99c}
+ .service-card h3,.service-card h4{color:#111}.service-card p,.service-card ul{color:#444}
+}
 </style>
 </head><body>
+<div class="contactbar"><div class="wrap contactbar__inner"><span>⌖ &nbsp; Guadalajara, Jalisco · Cobertura en todo México</span><div><a href="mailto:Eq739735@gmail.com">✉ Eq739735@gmail.com</a><a href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20el%20cat%C3%A1logo%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Quiero%20conocer%20las%20opciones%20de%20fabricaci%C3%B3n%20y%20solicitar%20una%20cotizaci%C3%B3n%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer">✆ +52 33 1488 4743</a></div></div></div>
 <header class="nav"><div class="wrap nav__inner"><a class="brand" href="./index.html" aria-label="García, ir a inicio"><img src="assets/garcia-mark.svg" alt=""><span><strong>GARCÍA</strong><small>PÉRGOLAS &amp; HERRERÍA</small></span></a><nav class="nav__links" aria-label="Navegación"><a href="./index.html#servicios">Servicios</a><a href="./index.html#proyectos">Obras reales</a><a href="./index.html#nosotros">Nosotros</a><a href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20el%20cat%C3%A1logo%20de%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Quisiera%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="nav__cta" href="./index.html#cotizar">Solicitar cotización ↗</a></nav></div></header>
 <main>
-<section class="intro" aria-labelledby="title"><img src="assets/catalogo/pergola-concepto.jpg" alt="Visualización conceptual de pérgola metálica con iluminación cálida"><div class="wrap intro__inner"><div class="eyebrow">Guadalajara, Jalisco · Cobertura en todo México</div><h1 id="title">Catálogo de ideas.<br>Metal con carácter.</h1><p>Conoce propuestas de fabricación de pérgolas, cubiertas, portones y herrería a medida. Estamos ubicados en Guadalajara, Jalisco, y contamos con transporte para atender proyectos en todo México.</p><div class="intro__actions"><a class="btn btn--gold" href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20el%20cat%C3%A1logo%20de%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Quisiera%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer">Cotiza por WhatsApp ↗</a><a class="btn btn--ghost" href="./index.html#cotizar">Enviar detalles del proyecto</a><button class="btn btn--ghost" type="button" id="print-catalog">Imprimir / Guardar PDF ↓</button></div><div class="intro__note">Las imágenes principales de este catálogo son visualizaciones digitales ilustrativas, no fotografías de obras ejecutadas. Materiales y servicios sujetos a evaluación y disponibilidad.</div></div></section>
-<section class="catalog" id="servicios"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Soluciones a medida</div><h2>Explora nuestras categorías.</h2><p>Una selección de líneas de herrería y estructuras que puedes consultar. El taller confirma la viabilidad, los materiales y el alcance antes de comprometer un trabajo.</p></div></div>
+<section class="intro" aria-labelledby="title"><img src="assets/catalogo/pergola-concepto.jpg" alt="Visualización conceptual de pérgola metálica con iluminación cálida"><div class="wrap intro__inner"><div class="eyebrow">Pérgolas y Herrería García · México</div><h1 id="title">Catálogo premium.<br><em>Metal con carácter.</em></h1><p>Conoce propuestas de fabricación de pérgolas, cubiertas, portones y herrería a medida. Estamos ubicados en Guadalajara, Jalisco, y contamos con transporte para atender proyectos en todo México.</p><div class="intro__actions"><a class="btn btn--gold" href="https://wa.me/523314884743?text=Hola%2C%20llegu%C3%A9%20desde%20el%20cat%C3%A1logo%20de%20la%20p%C3%A1gina%20web%20de%20P%C3%A9rgolas%20y%20Herrer%C3%ADa%20Garc%C3%ADa.%20Quisiera%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20en%20M%C3%A9xico." target="_blank" rel="noopener noreferrer">Cotiza por WhatsApp ↗</a><a class="btn btn--ghost" href="./index.html#cotizar">Enviar detalles del proyecto</a><button class="btn btn--ghost" type="button" id="print-catalog">Imprimir / Guardar PDF ↓</button></div><div class="intro__note">Diseños de referencia hiperrealistas: muestran posibilidades, no obras ejecutadas. Consulta materiales y viabilidad con el taller. <strong>Cobertura nacional desde Guadalajara, Jalisco.</strong></div></div></section>
+<section class="catalog" id="servicios"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Diseño · Fabricación · Instalación</div><h2>Soluciones que transforman espacios.</h2><p>Una selección de líneas de herrería y estructuras que puedes consultar. El taller confirma la viabilidad, los materiales y el alcance antes de comprometer un trabajo.</p></div></div>
 <div class="catalog__filters" aria-label="Ir a categoría"><a href="#pergolas">Pérgolas</a><a href="#cubiertas">Techumbres</a><a href="#portones">Portones</a><a href="#barandales">Barandales</a><a href="#escaleras">Escaleras</a><a href="#decorativa">Herrería decorativa</a><a href="#especiales">Especiales</a></div>
 <div class="catalog-grid">
 <article class="service-card" id="pergolas" data-category="pergolas">
